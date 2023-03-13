@@ -25,14 +25,14 @@ public class HistoryDetailsActivity extends AppCompatActivity {
         Intent callerIntent = getIntent();
         Bundle packageFromCaller = callerIntent.getBundleExtra("OrderID");
         int OrderID = packageFromCaller.getInt("OrderID");
-        tv_orderIDOrderDetails.setText(String.valueOf(OrderID)+" Including:");
+        tv_orderIDOrderDetails.setText(String.valueOf(OrderID)+getString(R.string.including));
         List<BillDetails> billDetails = BillDetailsHelper.getBillDetails(getApplicationContext(),OrderID);
         int billTotal = 0;
         for(BillDetails detail: billDetails){
             int total = detail.getPrice()*detail.getQuantitySale();
             billTotal += total;
         }
-        tv_finaltotalOrderDetails.setText("Total Of Order is: "+String.valueOf(billTotal));
+        tv_finaltotalOrderDetails.setText(getString(R.string.totalOrder)+String.valueOf(billTotal));
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getApplicationContext(), LinearLayoutManager.VERTICAL, false);
         recyclerView.setLayoutManager(linearLayoutManager);
         recyclerView.setAdapter(new HistoryOrderDetailsAdapter(getApplicationContext(), billDetails));

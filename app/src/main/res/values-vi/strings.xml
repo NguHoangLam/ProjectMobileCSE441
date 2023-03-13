@@ -57,4 +57,27 @@
     <string name="search_hint">Tìm Kiếm</string>
     <string name="incorrectPassword">Tài Khoản/Mật Khẩu Sai</string>
     <string name="unResigteredAccount">Tài Khoản Này Không Tồn Tại</string>
+    <string name="noAccount">Không Có Tài Khoản?</string>
+    <string name="register">Đăng Kí</string>
+    <string name="phone">Số Điện Thoại:</string>
+    <string name="phone2">Số Điện Thoại...</string>
+    <string name="address">Địa Chỉ:</string>
+    <string name="address2">Địa Chỉ...</string>
+    <string name="fullName">Tên Đầy Đủ:</string>
+    <string name="fullName2">Tên Đầy Đủ...</string>
+    <string name="password">Mật Khẩu:</string>
+    <string name="historyOrder">Lịch sử Đặt Hàng</string>
+    <string name="registerForm">Đăng Kí</string>
+    <string name="backLogin">Trở Về Đăng Nhập</string>
+    <string name="registerSuccess">Đăng Kí Thành Công!!!</string>
+    <string name="usernameAvailable">Tên Tài Khoản Đã Tồn Tại!!!</string>
+    <string name="registerFail">Đăng Kí Thất Bại!!!</string>
+    <string name="totalOrder">"Tổng Đơn Hàng là: "</string>
+    <string name="outOfStorage">Hết Hàng !!!</string>
+    <string name="home">Màn Hình Chính</string>
+    <string name="orderId">Mã Đơn Hàng</string>
+    <string name="back">Trở Về</string>
+    <string name="new1">Mới</string>
+    <string name="orderDate">Ngày Đặt</string>
+    <string name="including">" Bao Gồm:"</string>
 </resources>

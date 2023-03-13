@@ -68,4 +68,29 @@
     <string name="book4">Put pen to paper and master the quality graphics and visual presentation techniques to create creative commercial and architectural compositions!</string>
     <string name="book5">From the Nobel Prize-winning author of Thinking, Fast and Slow and the coauthor of Nudge, a revolutionary exploration of why people make bad judgments and how to make better ones—"a tour de force" (New York Times).</string>
     <string name="book6">Seasoned Google executives Eric Schmidt and Jonathan Rosenberg provide an insider\'s guide to Google, from its business history and disruptive corporate strategy to developing a new managment philosophy and creating a corporate culture where innovation and creativity thrive.</string>
+
+    <string name="noAccount">Don\'t Have Account</string>
+    <string name="register">Register</string>
+    <string name="phone">Phone: </string>
+    <string name="phone2">Phone...</string>
+    <string name="address">Address: </string>
+    <string name="address2">Address...</string>
+    <string name="fullName">Full Name: </string>
+    <string name="fullName2">FullName...</string>
+    <string name="password">Password: </string>
+    <string name="historyOrder">History Orders</string>
+    <string name="registerForm">Register Form</string>
+    <string name="backLogin">Back To Login</string>
+    <string name="registerSuccess">Register Success !!!</string>
+    <string name="usernameAvailable">User Name is Available !!!</string>
+    <string name="registerFail">Register Fail !!!</string>
+    <string name="totalOrder">Total Of Order is: </string>
+    <string name="outOfStorage">Out of Storage !!!</string>
+    <string name="home">Home</string>
+    <string name="orderId">Order Id</string>
+    <string name="back">Back</string>
+    <string name="new1">New</string>
+    <string name="orderDate">Order Date</string>
+    <string name="including"> Including:</string>
+
 </resources>

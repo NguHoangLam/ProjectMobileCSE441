@@ -3,8 +3,8 @@
 
     <item
         android:id="@+id/addtocart"
-        android:title="Add" />
+        android:title="@string/add" />
     <item
         android:id="@+id/details"
-        android:title="Details" />
+        android:title="@string/details" />
 </menu>

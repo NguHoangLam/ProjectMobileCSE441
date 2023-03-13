@@ -207,7 +207,7 @@
                             android:id="@+id/btn_historyOder"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="History Orders"
+                            android:text="@string/historyOrder"
                             android:textSize="20sp"
                             android:layout_marginTop="20dp"
                             android:textColor="#11006f"
@@ -260,7 +260,7 @@
                         android:id="@+id/tv_passwordLogin"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Password: "
+                        android:text="@string/password"
                         android:textColor="#11006f"
                         android:textSize="18sp"/>
                     <EditText
@@ -286,7 +286,7 @@
                         android:id="@+id/tv_fullName"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Full Name: "
+                        android:text="@string/fullName"
                         android:textColor="#11006f"
                         android:textSize="18sp"/>
                     <EditText
@@ -297,7 +297,7 @@
                         android:textSize="18sp"
                         android:textColor="#11006f"
                         android:text=""
-                        android:hint="FullName..."
+                        android:hint="@string/fullName2"
                         android:inputType="text"
                         />
                 </LinearLayout>
@@ -312,7 +312,7 @@
                         android:id="@+id/tv_address"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Address: "
+                        android:text="@string/address"
                         android:textColor="#11006f"
                         android:textSize="18sp"/>
                     <EditText
@@ -323,7 +323,7 @@
                         android:textSize="18sp"
                         android:textColor="#11006f"
                         android:text=""
-                        android:hint="Address..."
+                        android:hint="@string/address2"
                         android:inputType="text"
                         />
                 </LinearLayout>
@@ -338,7 +338,7 @@
                         android:id="@+id/tv_phone"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Phone: "
+                        android:text="@string/phone"
                         android:textColor="#11006f"
                         android:textSize="18sp"/>
                     <EditText
@@ -349,7 +349,7 @@
                         android:textSize="18sp"
                         android:textColor="#11006f"
                         android:text=""
-                        android:hint="Phone..."
+                        android:hint="@string/phone2"
                         android:inputType="text"
                         />
                 </LinearLayout>
@@ -368,7 +368,7 @@
                     android:id="@+id/btn_register"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Don't Have Account"
+                    android:text="@string/noAccount"
                     android:textColor="#11006f"
                     android:textSize="20sp"
                     android:textStyle="bold"
@@ -379,7 +379,7 @@
                     android:id="@+id/btn_confirm"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Register"
+                    android:text="@string/register"
                     android:textColor="#11006f"
                     android:textSize="20sp"
                     android:textStyle="bold"

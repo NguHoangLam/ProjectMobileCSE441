@@ -122,22 +122,22 @@ public class BookRecyclerViewAdapter  extends RecyclerView.Adapter<BookViewHolde
                 HashMap<Integer,Cart> carts = CartHelper.getAll(context.getApplicationContext());
                 if(carts.size()==0){
                     if(CartHelper.insert(context.getApplicationContext(),1,book.getId(),book.getBookTitle(),price,imgByte,1,price,book.getAuthor(),quantity)){
-                        Toast.makeText(context.getApplicationContext(),"Add Success !!!", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(context.getApplicationContext(),context.getString(R.string.addSuccess), Toast.LENGTH_SHORT).show();
                     }
                 }else{
                     if(!carts.containsKey(bookId)){
                         if(CartHelper.insert(context.getApplicationContext(),1,book.getId(),book.getBookTitle(),price,imgByte,1,price,book.getAuthor(),quantity)){
-                            Toast.makeText(context.getApplicationContext(),"Add Success !!!", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(context.getApplicationContext(),context.getString(R.string.addSuccess), Toast.LENGTH_SHORT).show();
                         }
                     }else{
                         Cart tempCart = carts.get(bookId);
                         tempCart.setQuantitySale(tempCart.getQuantitySale()+1);
                         CartHelper.delete(context.getApplicationContext(), bookId);
                         if(tempCart.getQuantitySale()>10){
-                            Toast.makeText(context.getApplicationContext(),"Out of Storage !!!", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(context.getApplicationContext(),context.getString(R.string.outOfStorage), Toast.LENGTH_SHORT).show();
                         }else {
                             if (CartHelper.insert(context.getApplicationContext(), 1, book.getId(), book.getBookTitle(), price, imgByte, tempCart.getQuantitySale(), price, book.getAuthor(), quantity)) {
-                                Toast.makeText(context.getApplicationContext(), "Add Success !!!", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(context.getApplicationContext(), context.getString(R.string.addSuccess), Toast.LENGTH_SHORT).show();
                             }
                         }
                     }

@@ -169,8 +169,8 @@ public class MainActivity extends AppCompatActivity {
                     phoneInput.setVisibility(View.VISIBLE);
                     btn_Confirm.setVisibility(View.VISIBLE);
                     btn_Login.setVisibility(View.GONE);
-                    tv_loginTitle.setText("Register Form");
-                    btn_Register.setText("Back To Login");
+                    tv_loginTitle.setText(getString(R.string.registerForm));
+                    btn_Register.setText(getString(R.string.backLogin));
                 }else{
                     register=false;
                     fullNameInput.setVisibility(View.GONE);
@@ -182,8 +182,8 @@ public class MainActivity extends AppCompatActivity {
                     edt_Phone.setText("");
                     edt_UserName.setText("");
                     edt_Password.setText("");
-                    tv_loginTitle.setText("Login Form");
-                    btn_Register.setText("Don't Have Account");
+                    tv_loginTitle.setText(getString(R.string.loginForm));
+                    btn_Register.setText(getString(R.string.noAccount));
                     btn_Login.setVisibility(View.VISIBLE);
                 }
 
@@ -202,13 +202,13 @@ public class MainActivity extends AppCompatActivity {
                     Map<String, UsersAccount> usersAccountList = UsersAccountHelper.getAll(getApplicationContext());
                     if(!usersAccountList.containsKey(userName)){
                         if(UsersAccountHelper.insert(getApplicationContext(),userName,password,fullName,address,phone)){
-                            Toast.makeText(getApplicationContext(), "Register Success !!!",Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), getString(R.string.registerSuccess),Toast.LENGTH_SHORT).show();
                         }
                     }else{
-                        Toast.makeText(getApplicationContext(), "User Name is Available !!!",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(), getString(R.string.usernameAvailable),Toast.LENGTH_SHORT).show();
                     }
                 }else{
-                    Toast.makeText(getApplicationContext(), "Register Fail !!!",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), getString(R.string.registerFail),Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -220,14 +220,14 @@ public class MainActivity extends AppCompatActivity {
                     view.setBackgroundResource(R.drawable.moneydown);
                     moneyUp = false;
                     Collections.sort(books, (s1, s2) -> {
-                        return Integer.parseInt(s1.getPrice()) - Integer.parseInt(s2.getPrice());
+                        return Integer.parseInt(s2.getPrice()) - Integer.parseInt(s1.getPrice());
 
                     });
                 }else{
                     moneyUp = true;
                     view.setBackgroundResource(R.drawable.moneyup);
                     Collections.sort(books, (s1, s2) -> {
-                        return Integer.parseInt(s2.getPrice()) - Integer.parseInt(s1.getPrice());
+                        return Integer.parseInt(s1.getPrice()) - Integer.parseInt(s2.getPrice());
                     });
                 }
                 recyclerView.setAdapter(new BookRecyclerViewAdapter(MainActivity.this, books));
@@ -399,11 +399,11 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
         switch (id){
             case R.id.addtocart:
-                Toast.makeText(getApplicationContext(),"Add Successful!",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(),getString(R.string.addSuccessful),Toast.LENGTH_SHORT).show();
 
                 break;
             case R.id.details:
-                Toast.makeText(getApplicationContext(),"Details...",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(),getString(R.string.detail),Toast.LENGTH_SHORT).show();
                 break;
         }
 

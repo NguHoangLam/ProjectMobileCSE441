@@ -9,7 +9,7 @@
         android:id="@+id/tv_title_orderdetails"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Title"
+        android:text="@string/title"
         android:textSize="24sp"
         android:layout_weight="1"
         android:textStyle="bold" />
@@ -18,7 +18,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="Author"
+        android:text="@string/author"
         android:textSize="18sp" />
     <LinearLayout
         android:layout_width="match_parent"
@@ -30,7 +30,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Price"
+            android:text="@string/price"
             android:textSize="18sp" />
         <TextView
             android:id="@+id/tv_quantity_orderdetails"

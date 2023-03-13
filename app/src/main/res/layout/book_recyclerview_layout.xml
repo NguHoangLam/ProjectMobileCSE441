@@ -31,7 +31,7 @@
                 android:id="@+id/tv_title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Title"
+                android:text="@string/title"
                 android:textSize="24sp"
                 android:textStyle="bold" />
 
@@ -39,7 +39,7 @@
                 android:id="@+id/tv_author"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Author"
+                android:text="@string/author"
                 android:textSize="18sp" />
 
             <TextView

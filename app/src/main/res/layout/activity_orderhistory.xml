@@ -13,7 +13,7 @@
         android:layout_height="?attr/actionBarSize"
         android:background="#fef1d7"
         app:layout_constraintTop_toTopOf="parent"
-        app:title="History Orders"
+        app:title="@string/historyOrder"
         app:titleTextColor="#11006f" />
 
     <androidx.recyclerview.widget.RecyclerView
@@ -25,7 +25,7 @@
         android:id="@+id/btn_home"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Home"
+        android:text="@string/home"
         android:textSize="20sp"
         android:layout_marginTop="20dp"
         android:textColor="#11006f"

@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:background="#fef1d7"
-        app:title="@String/bookDetails"
+        app:title="@string/bookDetails"
         app:titleTextColor="#11006f">
 
     </androidx.appcompat.widget.Toolbar>
@@ -101,7 +101,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="35dp"
-            android:text="Category Name"
+            android:text="@string/categoryName"
             android:textSize="14dp" />
     </LinearLayout>
 
@@ -126,7 +126,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="35dp"
             android:layout_weight="1"
-            android:text="Author Name" />
+            android:text="@string/authorName" />
     </LinearLayout>
 
     <LinearLayout
@@ -150,7 +150,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
             android:layout_weight="1"
-            android:text="Publish Date" />
+            android:text="@string/publishDate" />
     </LinearLayout>
 
     <TextView
