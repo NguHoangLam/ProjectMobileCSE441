@@ -1,0 +1,71 @@
+<resources>
+    <string name="app_name">ProjectMobileCSE441</string>
+
+    <string name="loginSuccess">Login Success!!!</string>
+
+    <string name="loginFail">Login Fail!!!</string>
+
+    <string name="normalMember">Normal Member</string>
+
+    <string name="VIPMember">VIP Member</string>
+
+    <string name="loginFirst">Login First, Please !!!</string>
+
+    <string name="addSuccessful">Add Successful!</string>
+
+    <string name="detail">Details...</string>
+
+    <string name="total">Total: </string>
+
+    <string name="update">Update</string>
+
+    <string name="checkOut">Check Out</string>
+    <string name="addMoreProduct">Empty Cart, Add Products, Please !!!</string>
+    <string name="newBooks">New Books</string>
+    <string name="userName">User Name</string>
+    <string name="totalSpent">Total Spent 2023</string>
+    <string name="rewardPoint">Reward Point</string>
+    <string name="logOut">Log Out</string>
+    <string name="loginForm">Login Form</string>
+    <string name="userName_">User Name: </string>
+    <string name="hintUserName">User Name...</string>
+    <string name="hintPassword">Password...</string>
+    <string name="login">Login</string>
+    <string name="bookDetails">Book Details-Book Store</string>
+    <string name="titlebook">Title book</string>
+    <string name="details">Details</string>
+    <string name="category">Category</string>
+    <string name="categoryName">Category Name</string>
+    <string name="author">Author</string>
+    <string name="authorName">Author Name</string>
+    <string name="publishDate">Publish Date</string>
+    <string name="description">Description</string>
+    <string name="descriptionOfBook">Description of a book</string>
+    <string name="addToCart">Add to Cart</string>
+    <string name="title">Title</string>
+    <string name="price">Price</string>
+    <string name="subtotal">Subtotal</string>
+    <string name="bookCategories">Book Categories</string>
+    <string name="add">Add</string>
+    <string name="cart">Cart</string>
+    <string name="language">Language</string>
+    <string name="exit">Exit</string>
+    <string name="quantityStorage">Quantity Cannot Bigger Than Storage Quantity</string>
+    <string name="quantityZero">Quantity Cannot Zero</string>
+    <string name="addSuccess">Add Success !!!</string>
+    <string name="addBook">Book Has Been Added !!!</string>
+    <string name="saved">Saved</string>
+    <string name="deleteSuccess">Deleted Success !!!</string>
+    <string name="quantityChanged">Quantity Has Changed !!!</string>
+    <string name="search_hint">Search Here!</string>
+    <string name="incorrectPassword">Password Incorrect!!!</string>
+    <string name="unResigteredAccount">Users do not exist!!!</string>
+
+
+    <string name="book1">Record your own words of wisdom for future generations. If you\'re looking for a new book in which to record your thoughts, lists, and more, you\'re in luck! Canterbury Classics, known for publishing fine works of literature, has released a new line of devotional journals for your writing pleasure.</string>
+    <string name="book2">Based on more than forty interviews with Steve Jobs conducted over two years—as well as interviews with more than 100 family members, friends, adversaries, competitors, and colleagues—Walter Isaacson has written a riveting story of the roller-coaster life and searingly intense personality of a creative entrepreneur whose passion for perfection and ferocious drive revolutionized six industries: personal computers, animated movies, music, phones, tablet computing, and digital publishing.</string>
+    <string name="book3">A riveting, deeply personal account of history in the making—from the president who inspired us to believe in the power of democracy</string>
+    <string name="book4">Put pen to paper and master the quality graphics and visual presentation techniques to create creative commercial and architectural compositions!</string>
+    <string name="book5">From the Nobel Prize-winning author of Thinking, Fast and Slow and the coauthor of Nudge, a revolutionary exploration of why people make bad judgments and how to make better ones—"a tour de force" (New York Times).</string>
+    <string name="book6">Seasoned Google executives Eric Schmidt and Jonathan Rosenberg provide an insider\'s guide to Google, from its business history and disruptive corporate strategy to developing a new managment philosophy and creating a corporate culture where innovation and creativity thrive.</string>
+</resources>

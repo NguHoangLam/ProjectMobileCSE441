@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp">
+
+    <TextView
+        android:id="@+id/tv_title_orderdetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:textSize="24sp"
+        android:layout_weight="1"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/tv_author_orderdetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Author"
+        android:textSize="18sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/tv_price_orderdetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Price"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/tv_quantity_orderdetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="X10"
+            android:textSize="24sp"
+            android:layout_weight="1"
+            android:textAlignment="textEnd"
+            android:paddingEnd="10dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_totalprice_orderdetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="20000"
+        android:textSize="24sp"
+        android:layout_weight="1"
+        android:textAlignment="textEnd"
+        android:paddingEnd="10dp"
+        android:textStyle="bold" />
+
+</LinearLayout>

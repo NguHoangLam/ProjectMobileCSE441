@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawerlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/holo_orange_light"
+            android:orientation="vertical">
+
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbarhomepage"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="#fef1d7"
+                app:title="Home-Book Store"
+                app:titleTextColor="#11006f">
+
+            </androidx.appcompat.widget.Toolbar>
+            <SearchView
+                android:id="@+id/searchView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:queryHint="@string/search_hint" />
+            <ViewFlipper
+                android:id="@+id/viewflipper"
+
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+            </ViewFlipper>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="159dp"
+                    android:layout_height="46dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/newBooks"
+                    android:textColor="#11006f"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <ImageButton
+                    android:id="@+id/btn_moneysort"
+                    android:layout_width="45dip"
+                    android:layout_height="45dip"
+                    android:background="@drawable/moneyup" />
+
+                <ImageButton
+                    android:id="@+id/btn_namesort"
+                    android:layout_width="45dip"
+                    android:layout_height="45dip"
+                    android:background="@drawable/nameup"
+                    android:padding="100px" />
+            </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <com.google.android.material.navigation.NavigationView
+
+            android:id="@+id/navigationview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+
+                >
+                <androidx.drawerlayout.widget.DrawerLayout
+                    android:id="@+id/drawerLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:id="@+id/img_Avatar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/user"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="20dp"
+                            />
+                        <TextView
+                            android:id="@+id/tv_userNameProfile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/userName"
+                            android:textStyle="bold"
+                            android:textColor="#11006f"
+                            android:paddingLeft="10dp"
+                            android:textSize="20sp"/>
+                        <TextView
+                            android:id="@+id/tv_userRankProfile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:text="@string/VIPMember"
+                            android:textColor="#11006f"
+                            android:textSize="20sp"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_gravity="left"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="1">
+                                <TextView
+                                    android:id="@+id/tv_totalspent"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/totalSpent"
+                                    android:textAlignment="textStart"
+                                    android:textSize="12sp"
+                                    android:textColor="#11006f"/>
+                                <TextView
+                                    android:id="@+id/tv_totalspentdetails"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="999.999"
+                                    android:textAlignment="textStart"
+                                    android:textSize="24sp"
+                                    android:textStyle="bold"
+                                    android:textColor="#11006f"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_gravity="right"
+                                android:layout_weight="1"
+                                android:layout_marginRight="10dp">
+                                <TextView
+                                    android:id="@+id/tv_rewardpoint"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/rewardPoint"
+                                    android:textAlignment="textEnd"
+                                    android:textSize="12sp"
+                                    android:textColor="#11006f"/>
+                                <TextView
+                                    android:id="@+id/tv_rewardpointdetails"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textAlignment="textEnd"
+                                    android:text="999"
+                                    android:textStyle="bold"
+                                    android:textSize="24sp"
+                                    android:textColor="#11006f"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <Button
+                            android:id="@+id/btn_logout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/logOut"
+                            android:textSize="20sp"
+                            android:layout_marginTop="20dp"
+                            android:textColor="#11006f"
+                            android:backgroundTint="@color/white"
+                            android:layout_gravity="center"
+                            />
+                        <Button
+                            android:id="@+id/btn_historyOder"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="History Orders"
+                            android:textSize="20sp"
+                            android:layout_marginTop="20dp"
+                            android:textColor="#11006f"
+                            android:backgroundTint="@color/white"
+                            android:layout_gravity="center"
+                            />
+                    </LinearLayout>
+                </androidx.drawerlayout.widget.DrawerLayout>
+                <TextView
+                    android:id="@+id/tv_loginFromTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/loginForm"
+                    android:textSize="26sp"
+                    android:textStyle="bold"
+                    android:textColor="#11006f"
+                    android:textAlignment="center"
+                    android:layout_marginTop="60dp"
+
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp">
+                    <TextView
+                        android:id="@+id/tv_userNameLogin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/userName_"
+                        android:textColor="#11006f"
+                        android:textSize="18sp"/>
+                    <EditText
+                        android:id="@+id/edt_username"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="18sp"
+                        android:textColor="#11006f"
+                        android:text=""
+                        android:hint="@string/hintUserName"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:id="@+id/tv_passwordLogin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Password: "
+                        android:textColor="#11006f"
+                        android:textSize="18sp"/>
+                    <EditText
+                        android:id="@+id/edt_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="18sp"
+                        android:textColor="#11006f"
+                        android:text=""
+                        android:hint="@string/hintPassword"
+                        android:inputType="textPassword"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/fullNameInput"
+                    android:visibility="gone"
+                    >
+                    <TextView
+                        android:id="@+id/tv_fullName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Full Name: "
+                        android:textColor="#11006f"
+                        android:textSize="18sp"/>
+                    <EditText
+                        android:id="@+id/edt_FullName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="18sp"
+                        android:textColor="#11006f"
+                        android:text=""
+                        android:hint="FullName..."
+                        android:inputType="text"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/addressInput"
+                    android:visibility="gone"
+                    >
+                    <TextView
+                        android:id="@+id/tv_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Address: "
+                        android:textColor="#11006f"
+                        android:textSize="18sp"/>
+                    <EditText
+                        android:id="@+id/edt_Address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="18sp"
+                        android:textColor="#11006f"
+                        android:text=""
+                        android:hint="Address..."
+                        android:inputType="text"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/phoneInput"
+                    android:visibility="gone"
+                    >
+                    <TextView
+                        android:id="@+id/tv_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Phone: "
+                        android:textColor="#11006f"
+                        android:textSize="18sp"/>
+                    <EditText
+                        android:id="@+id/edt_Phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="18sp"
+                        android:textColor="#11006f"
+                        android:text=""
+                        android:hint="Phone..."
+                        android:inputType="text"
+                        />
+                </LinearLayout>
+                <Button
+                    android:id="@+id/btn_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/login"
+                    android:textColor="#11006f"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="50dp"
+                    />
+                <Button
+                    android:id="@+id/btn_register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Don't Have Account"
+                    android:textColor="#11006f"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="50dp"
+                    />
+                <Button
+                    android:id="@+id/btn_confirm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Register"
+                    android:textColor="#11006f"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="50dp"
+                    android:visibility="gone"
+                    />
+
+
+            </LinearLayout>
+
+
+        </com.google.android.material.navigation.NavigationView>
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
